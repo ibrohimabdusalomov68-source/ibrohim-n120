@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apple — Do‘kon</title>
+<style>
+:root{--bg:#fff;--bg2:#f5f5f7;--tx:#1d1d1f;--tx2:#6e6e73;--ac:#0071e3;--line:#d2d2d7;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--bg2:#161617;--tx:#f5f5f7;--tx2:#a1a1a6;--line:#424245;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#000;--bg2:#161617;--tx:#f5f5f7;--tx2:#a1a1a6;--line:#424245;color-scheme:dark}
+html{scroll-padding-top:calc(44px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#161617;z-index:80}
+a{color:inherit;text-decoration:none}
+#cb{background:#333336;color:#d2d2d7;font-size:12px;display:flex;align-items:center;justify-content:center;gap:12px;padding:10px 40px 10px 16px;position:relative;flex-wrap:wrap;text-align:center}
+#cb select{background:#2a2a2d;color:#f5f5f7;border:1px solid #555;border-radius:6px;padding:4px 8px;font-size:12px}
+#cb button{background:#555;color:#fff;border:0;border-radius:6px;padding:5px 12px;font-size:12px;cursor:pointer}
+#cb .x{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;font-size:18px;padding:0}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:70;height:44px;background:rgba(22,22,23,.82);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);color:#f5f5f7;display:flex;align-items:center;justify-content:center;gap:clamp(10px,2.6vw,30px);font-size:12px;padding:0 16px;overflow-x:auto;white-space:nowrap}
+nav a,nav button{opacity:.8;transition:opacity .2s;background:none;border:0;color:inherit;font:inherit;cursor:pointer}nav a:hover,nav button:hover{opacity:1}
+#mm{position:fixed;top:calc(44px + env(safe-area-inset-top,0px));left:0;right:0;z-index:65;background:rgba(22,22,23,.95);backdrop-filter:blur(30px);color:#f5f5f7;display:none;padding:36px 0 56px}
+#mm.on{display:block;animation:d .25s}@keyframes d{from{opacity:0;transform:translateY(-8px)}}
+.mi{max-width:980px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+.mi small{display:block;color:#86868b;font-size:12px;margin-bottom:12px}.mi a{display:block;opacity:.9}.mi a:hover{opacity:1;color:#2997ff}
+.mi .b a{font-size:24px;font-weight:600;padding:4px 0}.mi .s a{font-size:12px;padding:4px 0}
+.gift{display:grid;grid-template-columns:1.1fr 1fr 1.1fr 1.2fr;grid-template-rows:260px 220px;gap:0;background:#f4c7b8;overflow:hidden}
+.gift>div{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.g1{background:#f6c9bd}.g1::before{content:"";width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 50% 70%,#ff8a3d 0 38%,#f7b8a0 39%);box-shadow:0 20px 40px rgba(0,0,0,.12)}
+.g2{background:repeating-linear-gradient(90deg,#f6e7c8 0 16px,#ff8a3d 16px 24px,#ffd23d 24px 40px,#ff5c8a 40px 48px,#f6e7c8 48px 64px)}
+.g3{background:#fff;font-size:110px}
+.g4{background:#e9b323}.g4::before{content:"";width:62%;height:74%;border-radius:22px;background:#1d1d1f;box-shadow:inset 0 0 0 6px #333}.g4::after{content:"";position:absolute;width:50%;height:56%;border-radius:50%;border:14px solid #ff7a59;border-right-color:#ffb07a;border-left-color:#ff4d6d;filter:blur(1px)}
+.g5{background:#f1e083;grid-column:1/2}.g5::before{content:"";width:100%;height:100%;background:linear-gradient(135deg,transparent 45%,#fff 45% 55%,transparent 55%),linear-gradient(225deg,transparent 45%,#fff 45% 55%,transparent 55%);background-size:90px 90px}
+.g6{grid-column:2/4;background:#8b2316;color:#fff;flex-direction:column;text-align:center;padding:20px}
+.g6 h2{font-size:clamp(28px,3.4vw,44px);font-weight:700;letter-spacing:-.02em}.g6 p{font-size:clamp(15px,1.6vw,19px);margin:6px 0 14px}
+.g7{background:#e8692e;font-size:90px}
+.btn{background:#0071e3;color:#fff;border:0;border-radius:980px;padding:9px 18px;font-size:14px;cursor:pointer;font-family:inherit;transition:background .2s}.btn:hover{background:#0077ed}
+.btn.g{background:#e8e8ed;color:#1d1d1f}.btn.g:hover{background:#dcdce1}
+.ih{background:#f5f5f7;color:#1d1d1f;text-align:center;padding:70px 20px 0;overflow:hidden}
+.ih h2{font-size:clamp(40px,6vw,72px);font-weight:600;letter-spacing:-.03em}.ih .cta{display:flex;gap:12px;justify-content:center;margin:18px 0}
+.hand{width:230px;height:330px;margin:20px auto -80px;position:relative}
+.hand .p{position:absolute;left:30px;top:0;width:170px;height:300px;border-radius:30px;background:linear-gradient(160deg,#2a3a5a,#7ea6e0 55%,#e4a0c0);border:5px solid #26262a;box-shadow:0 25px 50px rgba(0,0,0,.3)}
+.hand .p::before{content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);width:50px;height:14px;border-radius:8px;background:#000}
+.hand .f{position:absolute;bottom:-30px;left:0;right:0;height:130px;border-radius:70px 70px 0 0;background:linear-gradient(#f0c9a8,#d9a67f)}
+.tv{background:#000;color:#fff;padding:0 0 40px}.tvh{position:relative;height:min(62vw,520px);min-height:340px;overflow:hidden}
+.sl{position:absolute;inset:0;opacity:0;transition:opacity .9s;display:flex;align-items:flex-end;padding:40px max(24px,6vw)}.sl.on{opacity:1}
+.sl h2{font-size:clamp(46px,11vw,150px);font-weight:800;letter-spacing:-.04em;line-height:.95;text-shadow:0 8px 40px rgba(0,0,0,.35)}
+.sl .t{position:absolute;left:max(24px,6vw);bottom:40px;display:flex;gap:14px;align-items:center;font-size:14px}.sl h2{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap}
+.sl .t span{color:#d2d2d7}
+.tvr{display:flex;gap:12px;padding:12px max(12px,calc(50% - 600px));overflow-x:auto;scrollbar-width:none}.tvr div{flex:0 0 min(360px,80vw);height:190px;border-radius:14px;padding:16px;display:flex;align-items:flex-end;font-weight:600;font-size:18px;transition:transform .3s;cursor:pointer}.tvr div:hover{transform:scale(1.03)}
+.dots{display:flex;justify-content:center;gap:8px;padding:10px}.dots i{width:7px;height:7px;border-radius:50%;background:#555;cursor:pointer}.dots i.on{background:#fff}
+.sec{max-width:1000px;margin:60px auto 24px;padding:0 20px;font-size:clamp(26px,3.6vw,40px);font-weight:600;letter-spacing:-.02em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;max-width:1000px;margin:0 auto;padding:0 20px 40px}
+.card{background:var(--bg2);border-radius:20px;padding:22px;transition:transform .3s,box-shadow .3s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(0,0,0,.14)}
+.card .e{font-size:64px;text-align:center;margin:6px 0 12px}.card b{font-size:19px;display:block}.card small{color:var(--tx2);display:block;margin:4px 0 10px;font-size:13px}
+footer{background:var(--bg2);color:var(--tx2);font-size:12px;padding:20px 20px calc(24px + env(safe-area-inset-bottom,0px));line-height:1.5}
+footer .in{max-width:1000px;margin:0 auto}footer .n{padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:14px}
+footer .c{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+footer h4{color:var(--tx);font-size:12px;margin-bottom:6px}footer a{display:block;padding:2px 0}footer a:hover{text-decoration:underline}
+footer .bt{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:14px}
+#ts{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:#1d1d1f;color:#fff;padding:12px 20px;border-radius:980px;font-size:14px;opacity:0;transition:.35s;z-index:120;pointer-events:none}#ts.on{opacity:1;transform:translate(-50%,0)}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media(max-width:734px){.gift{grid-template-columns:1fr 1fr;grid-template-rows:170px 170px 200px 130px}.g4{order:2}.g5{display:none}.g6{grid-column:1/3;order:3}.g7{order:4;grid-column:1/3}.mi{grid-template-columns:1fr}.g1::before{width:120px;height:120px}.g3{font-size:70px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+:focus-visible{outline:2px solid #0071e3;outline-offset:2px}
+</style>
+</head>
+<body>
+<div id="cb"><span>Boshqa mamlakat yoki hududni tanlang</span><select><option>O‘zbekiston</option><option>Qozog‘iston</option><option>AQSh</option></select><button>Davom etish</button><button class="x" aria-label="Yopish" onclick="this.parentNode.style.display='none'">×</button></div>
+<nav id="nv">
+ <a href="#top" aria-label="Bosh sahifa" style="font-size:16px;filter:grayscale(1) brightness(1.8)">🍎</a>
+ <a data-m="Do‘kon" href="#mahsulot">Do‘kon</a><a data-m="Mac" href="#mahsulot">Mac</a><a data-m="iPad" href="#mahsulot">iPad</a><a data-m="iPhone" href="#mahsulot">iPhone</a><a data-m="Watch" href="#mahsulot">Watch</a><a data-m="Vision" href="#mahsulot">Vision</a><a data-m="AirPods" href="#mahsulot">AirPods</a><a href="#top">Uy</a><a href="#tv">Ko‘ngilochar</a><a href="#mahsulot">Aksessuarlar</a><a href="#footer">Yordam</a>
+ <button aria-label="Qidiruv">⌕</button><button id="th" aria-label="Rejim">◐</button><button aria-label="Savat">👜</button>
+</nav>
+<div id="mm"></div>
+
+<main id="top">
+<section class="gift">
+ <div class="g1"></div><div class="g2"></div><div class="g3">🎁</div><div class="g4"></div>
+ <div class="g5"></div>
+ <div class="g6"><h2>Ular yaxshi ko‘radigan sovg‘alar.</h2><p>Bayram uchun eng mos sovg‘ani toping.</p><button class="btn" onclick="toast('Sovg‘alar bo‘limi tez orada')">Sovg‘alarni ko‘rish</button></div>
+ <div class="g7">🎧</div>
+</section>
+
+<section class="ih">
+ <h2>iPhone 17 Pro</h2><p style="font-size:21px">Salom, kelajak.</p>
+ <div class="cta"><a class="btn" href="#mahsulot">Batafsil</a><a class="btn g" href="#mahsulot">Sotib olish</a></div>
+ <div class="hand"><div class="p"></div><div class="f"></div></div>
+</section>
+
+<section class="tv" id="tv">
+ <div class="tvh" id="sl">
+  <div class="sl on" style="background:linear-gradient(120deg,#0a4a5a,#2aa3a8 60%,#0a2a3a)"><h2 style="color:#ff2d2d">12 12 12</h2><div class="t"><button class="btn g">Hozir ko‘rish</button><span>7 kun bepul sinab ko‘ring</span></div></div>
+  <div class="sl" style="background:linear-gradient(120deg,#222,#666 60%,#111)"><h2>YANGI FILM</h2><div class="t"><button class="btn g">Hozir ko‘rish</button><span>Drama · yangi mavsum</span></div></div>
+  <div class="sl" style="background:linear-gradient(120deg,#3a1050,#c2418c 60%,#ff8a3d)"><h2>KONSERT</h2><div class="t"><button class="btn g">Hozir ko‘rish</button><span>Jonli efir</span></div></div>
+ </div>
+ <div class="dots" id="dt"></div>
+ <div class="tvr">
+  <div style="background:linear-gradient(135deg,#1a3a5a,#e08a4a)">Shahar chegarasi</div><div style="background:linear-gradient(135deg,#7a5a3a,#c9b9a0);color:#111">Sahro yo‘li</div><div style="background:linear-gradient(135deg,#6a1a3a,#ff3d5a)">Tezlik</div><div style="background:linear-gradient(135deg,#cfd9f2,#b19ae6);color:#111">Bulutlar ustida</div>
+ </div>
+</section>
+
+<h3 class="sec" id="mahsulot">Mahsulotlarni tanlang</h3>
+<div class="grid" id="grid"></div>
+</main>
+
+<footer id="footer"><div class="in">
+ <p class="n">Narxlar namunaviy va faqat ko‘rgazma uchun. Bu sahifa Apple kompaniyasining rasmiy sayti emas.</p>
+ <div class="c">
+  <div><h4>Xarid qilish</h4><a href="#mahsulot">Mac</a><a href="#mahsulot">iPad</a><a href="#mahsulot">iPhone</a><a href="#mahsulot">Watch</a><a href="#mahsulot">AirPods</a></div>
+  <div><h4>Hisob</h4><a href="#top">Mening hisobim</a><a href="#top">Buyurtmalar</a></div>
+  <div><h4>Apple do‘koni</h4><a href="#top">Do‘kon topish</a><a href="#top">Muddatli to‘lov</a><a href="#top">Eski qurilmani almashtirish</a></div>
+  <div><h4>Yordam</h4><a href="#top">Qo‘llab-quvvatlash</a><a href="#top">Ta’mirlash</a><a href="#top">Bog‘lanish</a></div>
+ </div>
+ <div class="bt"><span>© 2026 Barcha huquqlar himoyalangan.</span><span>O‘zbekiston</span></div>
+</div></footer>
+<div id="ts"></div>
+
+<script>
+function $(i){return document.getElementById(i)}
+var P=[['📱','iPhone 17 Pro','Titan korpus, A19 Pro',16900000],['📲','iPhone 17','Yorqin ekran, ikki kamera',11900000],['💻','MacBook Air 13″','M4 chip, 18 soat batareya',14500000],['🖥️','MacBook Pro 14″','M4 Pro, XDR ekran',25900000],['📟','iPad Pro 11″','OLED ekran, M4',15900000],['⌚','Apple Watch Series 11','Salomatlik kuzatuvi',6200000],['🎧','AirPods Pro 3','Shovqinni yo‘qotish',3500000],['🥽','Vision Pro','Fazoviy hisoblash',89000000]];
+function f(n){return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,' ')+' so‘m'}
+$('grid').innerHTML=P.map(function(p){return '<div class="card rv"><div class="e">'+p[0]+'</div><b>'+p[1]+'</b><small>'+p[2]+'</small><div style="margin-bottom:12px">'+f(p[3])+' dan</div><button class="btn" onclick="toast(\'✓ Savatga qo‘shildi\')">Sotib olish</button></div>'}).join('');
+var tt;function toast(t){var s=$('ts');s.textContent=t;s.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){s.classList.remove('on')},1800)}
+var M={'Do‘kon':[['Sovg‘alar','Mac','iPad','iPhone','Apple Watch','Apple Vision Pro','AirPods','Uy','Aksessuarlar'],['Do‘kon topish','Buyurtma holati','Eski qurilmani almashtirish','Muddatli to‘lov','Shaxsiy sozlash'],['Qayta tiklangan','Ta’lim','Biznes','Faxriylar uchun']],Mac:[['MacBook Air','MacBook Pro','iMac','Mac mini'],['Mac’ni solishtirish','macOS'],['Aksessuarlar']],iPad:[['iPad Pro','iPad Air','iPad','iPad mini'],['iPad’ni solishtirish','iPadOS'],['Apple Pencil']],iPhone:[['iPhone 17 Pro','iPhone 17','iPhone Air'],['iPhone’ni solishtirish','iOS'],['Aksessuarlar']],Watch:[['Series 11','Ultra 3','SE'],['Tasmalar','watchOS'],['Apple Fitness+']],Vision:[['Apple Vision Pro'],['Ilovalar'],['Qo‘llab-quvvatlash']],AirPods:[['AirPods Pro 3','AirPods 4','AirPods Max'],['AirPods’ni solishtirish'],['Aksessuarlar']]};
+var mm=$('mm'),nv=$('nv');
+function col(a,c,t){return '<div class="'+c+'"><small>'+t+'</small>'+a.map(function(x){return '<a href="#mahsulot">'+x+'</a>'}).join('')+'</div>'}
+document.querySelectorAll('nav [data-m]').forEach(function(a){a.onmouseenter=function(){var m=M[a.dataset.m];mm.innerHTML='<div class="mi">'+col(m[0],'b',a.dataset.m==='Do‘kon'?'Do‘kon':'Tanlang')+col(m[1],'s','Tezkor havolalar')+col(m[2],'s','Yana')+'</div>';mm.classList.add('on')}});
+function hm(e){if(!mm.contains(e.relatedTarget)&&!nv.contains(e.relatedTarget))mm.classList.remove('on')}mm.onmouseleave=hm;nv.onmouseleave=hm;mm.onclick=function(){mm.classList.remove('on')};
+$('th').onclick=function(){var r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);r.dataset.theme=d?'light':'dark'};
+var sl=document.querySelectorAll('.sl'),dt=$('dt'),k=0,hv=0;
+dt.innerHTML=[].map.call(sl,function(_,i){return '<i data-i="'+i+'"></i>'}).join('');
+function show(i){k=(i+sl.length)%sl.length;sl.forEach(function(s,j){s.classList.toggle('on',j==k)});[].forEach.call(dt.children,function(d,j){d.className=j==k?'on':''})}
+show(0);dt.onclick=function(e){if(e.target.dataset.i)show(+e.target.dataset.i)};
+$('sl').onmouseenter=function(){hv=1};$('sl').onmouseleave=function(){hv=0};
+setInterval(function(){if(!hv&&!document.hidden)show(k+1)},4000);
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
